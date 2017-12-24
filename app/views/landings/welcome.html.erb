@@ -2,19 +2,76 @@
   body {
     background-color: #cdcebd;
   }
+
+  .content-block {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
+  .main-header {
+    margin-top: 100px;
+    font-family: 'Vollkorn', serif;
+    font-size: 3.5em;
+    font-weight: normal;
+    font-style: oblique;
+  }
+
+  .sub-header {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: oblique;
+  }
+
+  .lightbox {
+    background-color: #e3e4d5;
+    margin: 10px 30px;
+    padding: 5px 2px;
+    border-radius: 20px;
+  }
+
+  .cursive {
+    font-family: 'Oregano', cursive;
+    font-size: 2.0em;
+    font-weight: normal;
+    font-style: oblique;
+  }
+
+  .featured-img {
+    margin-top: 10px;
+    border: 10px solid #e3e4d5;
+    border-radius: 50px;
+    max-width: 400px;
+  }
 </style>
 
 <div class="text-center">
-  <h1>Merry Christmas Babe!!</h1>
+  <div class="content-block">
+    <h1 class="main-header">Merry Christmas Babe!</h1>
+    <h2 class="sub-header">We now have a website!</h2>
 
-  <%= image_tag('m-and-j-xmas') %>
 
-  <div>
-    <h2>Babe! We now have a website!</h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    <div>
+      In it's current state this page is nothing special...
+      <br>
+      but we can do <strong>WHATEVER</strong> we want with it!
 
-      We are not limited with what we can do on here!
-    </p>
+      <div class="lightbox">
+        - Want to write a couple's blog... <strong>DONE</strong>
+        <br>
+        - Want to use it to just post photos... <strong>DONE</strong>
+        <br>
+        - Want to just keep it for safekeeping... <strong>DONE</strong>
+      </div>
+
+    </div>
+
+
+    <%= image_tag 'm-and-j-xmas', class: 'featured-img' %>
+
+    <p class="cursive">I LOVE YOU!</p>
+    <p class="cursive">- Michael</p>
   </div>
 </div>
